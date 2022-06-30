@@ -6,8 +6,13 @@ while (i < 5) {
     i++;
 }
 console.log(numeros);
-let resultado;
+let usandomap = numeros.map(function (numeros) {
+    return numeros * numeros;
+});
+console.log(usandomap);
 for (let i = 0; i < numeros.length; i++) {
-    let resultado = numeros[i] * 2;
+    let resultado;
+    resultado = Math.pow(numeros[i], 2);
     console.log(resultado);
+    ;
 }
